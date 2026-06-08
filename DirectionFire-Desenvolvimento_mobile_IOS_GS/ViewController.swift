@@ -25,7 +25,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         configurarPopUpButtonVegetacao()
         configurarPopUpButtonDirecaoVento()
     }
@@ -34,15 +33,16 @@ class ViewController: UIViewController {
     @IBAction func cadastrarArea(_ sender: Any) {
         let nome = txtNomeLocal.text ?? ""
         let vegetacao = tipVegetacao.currentTitle ?? ""
-        let umidade = txtUmidade.text ?? ""
-        let temperatura = txtTempMedia.text ?? ""
+        let umidade = Int(txtUmidade.text ?? "0")!
+        let temperatura = Int(txtTempMedia.text ?? "0")!
         let chuva = chuva.isOn
         let regImportante = importanteProximo.isOn
         let dirImportante = dirAreaImportante.currentTitle ?? ""
         
+        let regiao = Regiao(nome: nome, vegetacao: vegetacao, umidade: umidade, temperaturaMedia: temperatura, chuvaRecente: chuva, importanteProximo:  regImportante, direcaoImportante: dirImportante)
         
-        //print para testes, apagar depois de fizer a classe
-        print("teste ==== \(nome), \(vegetacao), \(umidade), \(temperatura), \(chuva), \(regImportante),\(dirImportante) ====")
+        
+//        print("\(regiao.nome) \(regiao.vegetacao) \(regiao.umidade) \(regiao.chuvaRecente)")
         
     }
     

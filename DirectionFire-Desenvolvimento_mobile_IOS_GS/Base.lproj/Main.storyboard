@@ -137,8 +137,10 @@
                         <outlet property="cadastrar" destination="51l-Cg-2yn" id="iEi-pA-FBG"/>
                         <outlet property="chuva" destination="y17-ux-Xm3" id="KLe-LM-EkC"/>
                         <outlet property="dirAreaImportante" destination="ZOh-TP-MsD" id="UHi-XJ-kaZ"/>
+                        <outlet property="importanteProximo" destination="U8Z-dp-CVz" id="0BI-Jz-Jsk"/>
                         <outlet property="tipVegetacao" destination="mid-N3-bAg" id="Djl-K9-ITL"/>
                         <outlet property="txtNomeLocal" destination="9XH-Ap-ahp" id="xB0-Yj-IZU"/>
+                        <outlet property="txtTempMedia" destination="5XD-Ks-b23" id="i4Q-8L-O3H"/>
                         <outlet property="txtUmidade" destination="j00-3m-pQq" id="d28-8c-uCr"/>
                     </connections>
                 </viewController>
