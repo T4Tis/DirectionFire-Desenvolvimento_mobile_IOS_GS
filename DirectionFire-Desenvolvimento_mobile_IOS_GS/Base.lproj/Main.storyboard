@@ -129,15 +129,6 @@
                                     <action selector="cadastrarArea:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yt0-ZD-zs5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bY4-d2-w2W">
-                                <rect key="frame" x="247" y="651" width="132" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Ver tela(teste)"/>
-                                <connections>
-                                    <segue destination="fCb-jP-8eD" kind="show" id="aGL-Dk-g72"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
@@ -439,9 +430,6 @@
             <point key="canvasLocation" x="-50" y="670"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="lld-WG-mXl"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
