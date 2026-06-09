@@ -386,10 +386,10 @@
             </objects>
             <point key="canvasLocation" x="851" y="-27"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu-->
         <scene sceneID="9fM-e0-Dwg">
             <objects>
-                <viewController id="W8G-eC-YrQ" sceneMemberID="viewController">
+                <viewController title="Menu" id="W8G-eC-YrQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dkK-0a-q4n">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
