@@ -46,15 +46,15 @@ class Regiao{
 
         // Vegetação
         switch vegetacao {
-        case "Savana":                      score += 15
-        case "Pradarias e Estepes":         score += 10
-        case "Taiga / Floresta Boreal":     score += 5
-        case "Floresta Temperada":          score += 5
-        case "Tundra":                      score -= 5
+        case "Savana": score += 15
+        case "Pradarias e Estepes": score += 10
+        case "Taiga / Floresta Boreal": score += 5
+        case "Floresta Temperada": score += 5
+        case "Tundra": score -= 5
         case "Floresta Tropical/Equatorial":score -= 10
         default: break
         }
 
-        return "Chance Incendio: \(max(0, min(100, score)))%"
+        return "\(max(0, min(100, score)))"
     }
 }

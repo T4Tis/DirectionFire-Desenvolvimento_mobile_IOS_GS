@@ -411,15 +411,6 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="fJF-2I-Bg4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNc-Rz-OdW">
-                                <rect key="frame" x="108" y="412" width="177" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Regios Cadastradas"/>
-                                <connections>
-                                    <segue destination="fCb-jP-8eD" kind="show" id="lld-WG-mXl"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4P-CD-wsh">
                                 <rect key="frame" x="119" y="519" width="154" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -427,6 +418,15 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Nome Rm e Nota"/>
                                 <connections>
                                     <segue destination="30n-Bo-MRg" kind="show" id="g5Z-8j-U6l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNc-Rz-OdW">
+                                <rect key="frame" x="108" y="409" width="177" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Regios Cadastradas"/>
+                                <connections>
+                                    <segue destination="fCb-jP-8eD" kind="show" id="lld-WG-mXl"/>
                                 </connections>
                             </button>
                         </subviews>

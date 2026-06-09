@@ -43,7 +43,7 @@ class RegiaoTableViewController: UITableViewController {
         // Configure the cell...
         let r = ArryMemoria.regioes[indexPath.row]
         cell.textLabel?.text = r.nome
-        cell.detailTextLabel?.text = "\(r.vegetacao) · \(r.chanceFogo())"
+        cell.detailTextLabel?.text = "\(r.vegetacao) · Chance Incêndio: \(r.chanceFogo())%"
 
         return cell
     }
