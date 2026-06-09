@@ -7,6 +7,7 @@
 
 import Foundation
 
+/*uma arrey compartilhada servindo como uma memoria*/
 class ArryMemoria {
     
     static var regioes: [Regiao] = []

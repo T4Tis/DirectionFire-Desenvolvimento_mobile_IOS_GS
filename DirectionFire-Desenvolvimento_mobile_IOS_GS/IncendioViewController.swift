@@ -28,16 +28,22 @@ class IncendioViewController: UIViewController {
 
         if let r = regiaoSelecionada {
             lblDetectada.text = "Regiao Detectada - \(r.nome)"
+            
+        // configurando popUpButtom
         }
-        configurarPopUpTipoIncendio()
-        configurarPopUpDirecaoVento()
+        PopUpHelper.configurar(botao: tipoIncendio, opcoes:
+                                ["Superficial", "Subterrâneo", "Copa"]
+        )
+        PopUpHelper.configurar(botao: dirVento, opcoes:
+                                ["Norte", "Sul", "Leste", "Oeste", "Nordeste", "Noroeste", "Sudeste", "Sudoeste"]
+        )
     }
     
     @IBAction func stepperChanged(_ sender: UIStepper) {
         txtNivel.text = "\(Int(sender.value))"
     }
 
-    // validação aq nao acho muito ncesesario, as escolhas ja são pre determinadas e para chegar aq vc tem que escolher uma região, mas fiz pelo menos na regiaoSelecionada por preucação
+    // validação aq nao acho muito ncsesario, as escolhas ja são pre determinadas e para chegar aq vc tem que escolher uma região, mas fiz pelo menos na regiaoSelecionada por preucação
     @IBAction func concluirDeteccao(_ sender: Any) {
         guard let regiao = regiaoSelecionada else {
             lblSituacao.text = "Nenhuma região selecionada"
@@ -52,30 +58,5 @@ class IncendioViewController: UIViewController {
         let incendio = Incendio(regiao: regiao, seriedade: seriedadeVal, tipoIncendio: tipo, direcaoVento: direcao, nivelVento: nivel)
 
         lblSituacao.text = incendio.situacao()
-    }
-    
-    
-    
-    
-    func configurarPopUpTipoIncendio() {
-        let opcoes = ["Superficial", "Subterrâneo", "Copa"]
-        let actions = opcoes.enumerated().map { (index, titulo) -> UIAction in
-            UIAction(title: titulo, state: index == 0 ? .on : .off) { _ in }
-        }
-        let menu = UIMenu(title: "", options: .singleSelection, children: actions)
-        tipoIncendio.menu = menu
-        tipoIncendio.showsMenuAsPrimaryAction = true
-        tipoIncendio.changesSelectionAsPrimaryAction = true
-    }
-
-    func configurarPopUpDirecaoVento() {
-        let opcoes = ["Norte", "Sul", "Leste", "Oeste", "Nordeste", "Noroeste", "Sudeste", "Sudoeste"]
-        let actions = opcoes.enumerated().map { (index, titulo) -> UIAction in
-            UIAction(title: titulo, state: index == 0 ? .on : .off) { _ in }
-        }
-        let menu = UIMenu(title: "", options: .singleSelection, children: actions)
-        dirVento.menu = menu
-        dirVento.showsMenuAsPrimaryAction = true
-        dirVento.changesSelectionAsPrimaryAction = true
     }
 }

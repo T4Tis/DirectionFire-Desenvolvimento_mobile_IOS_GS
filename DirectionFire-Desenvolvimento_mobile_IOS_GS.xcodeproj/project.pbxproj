@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0C83D22FD8873A0094EF9E /* PopUpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0C83D12FD8873A0094EF9E /* PopUpHelper.swift */; };
 		AC8025282FD78DD0000E7C44 /* RegiaoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8025272FD78DD0000E7C44 /* RegiaoTableViewController.swift */; };
 		AC80252A2FD78FEA000E7C44 /* ArryMemoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8025292FD78FEA000E7C44 /* ArryMemoria.swift */; };
 		AC80252C2FD79B91000E7C44 /* IncendioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80252B2FD79B91000E7C44 /* IncendioViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC0C83D12FD8873A0094EF9E /* PopUpHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpHelper.swift; sourceTree = "<group>"; };
 		AC8025272FD78DD0000E7C44 /* RegiaoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiaoTableViewController.swift; sourceTree = "<group>"; };
 		AC8025292FD78FEA000E7C44 /* ArryMemoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArryMemoria.swift; sourceTree = "<group>"; };
 		AC80252B2FD79B91000E7C44 /* IncendioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncendioViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				ACE573072FD7390600B1D056 /* AppDelegate.swift */,
 				ACE573092FD7390600B1D056 /* SceneDelegate.swift */,
 				ACE5730B2FD7390600B1D056 /* RegiaoViewController.swift */,
+				AC0C83D12FD8873A0094EF9E /* PopUpHelper.swift */,
 				AC80252B2FD79B91000E7C44 /* IncendioViewController.swift */,
 				AC80252D2FD7A024000E7C44 /* Incendio.swift */,
 				AC8025272FD78DD0000E7C44 /* RegiaoTableViewController.swift */,
@@ -164,6 +167,7 @@
 				AC80252E2FD7A024000E7C44 /* Incendio.swift in Sources */,
 				AC8025282FD78DD0000E7C44 /* RegiaoTableViewController.swift in Sources */,
 				ACE573222FD75DA000B1D056 /* Regiao.swift in Sources */,
+				AC0C83D22FD8873A0094EF9E /* PopUpHelper.swift in Sources */,
 				AC80252A2FD78FEA000E7C44 /* ArryMemoria.swift in Sources */,
 				ACF3B7B82FD85BC2007CC431 /* NomeRmNotaViewController.swift in Sources */,
 				AC80252C2FD79B91000E7C44 /* IncendioViewController.swift in Sources */,

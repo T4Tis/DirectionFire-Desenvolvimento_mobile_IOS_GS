@@ -8,6 +8,8 @@
 import UIKit
 
 class MensagemHelper{
+    
+    /* Acabei não usando a confirmação e nem a actionActionSheet, mas deixei aqui de qualquer forma */
     // Alert simples (OK)
     static func alerta(titulo: String, mensagem: String, em vc: UIViewController) {
         let alert = UIAlertController(title: titulo, message: mensagem, preferredStyle: .alert)

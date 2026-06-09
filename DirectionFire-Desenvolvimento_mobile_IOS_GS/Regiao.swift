@@ -27,17 +27,21 @@ class Regiao{
         
         print(nome, vegetacao, umidade, temperaturaMedia, chuvaRecente, importanteProximo, direcaoImportante)
     }
-    
+    /*
+     o peso do score esta certo, quanto maior o score maior o problema
+     nesse eu posso confirmar que os numeros escolhidos para tempratura e umidade que vão determinar o score não foram aleatorios, eu pesquisei sobre o assunto e cheguei neles
+     o numero que representa o peso do score foi feito apenas comparando um com o outro sem muita pesquisa feito na hora, o projeto 100% realizado ia tirar criar seu peso para o score apartir de dados que ele usara para aprender
+     */
     func chanceFogo() -> String {
         var score = 0
 
         // Umidade: menor = mais perigoso
-        if umidade < 30      { score += 40 }
+        if umidade < 30 { score += 40 }
         else if umidade < 50 { score += 25 }
         else if umidade < 70 { score += 10 }
 
         // Temperatura: maior = mais perigoso
-        if temperaturaMedia > 35      { score += 35 }
+        if temperaturaMedia > 35 { score += 35 }
         else if temperaturaMedia > 25 { score += 20 }
         else if temperaturaMedia > 15 { score += 10 }
 
@@ -46,13 +50,20 @@ class Regiao{
 
         // Vegetação
         switch vegetacao {
-        case "Savana": score += 15
-        case "Pradarias e Estepes": score += 10
-        case "Taiga / Floresta Boreal": score += 5
-        case "Floresta Temperada": score += 5
-        case "Tundra": score -= 5
-        case "Floresta Tropical/Equatorial":score -= 10
-        default: break
+        case "Savana":
+            score += 15
+        case "Pradarias e Estepes":
+            score += 10
+        case "Taiga / Floresta Boreal":
+            score += 5
+        case "Floresta Temperada":
+            score += 5
+        case "Tundra":
+            score -= 5
+        case "Floresta Tropical/Equatorial":
+            score -= 10
+        default:
+            break
         }
 
         return "\(max(0, min(100, score)))"
