@@ -189,8 +189,15 @@
                                     <action selector="MostrarAnaliseNota:" destination="30n-Bo-MRg" eventType="touchUpInside" id="eEn-Xi-Ao3"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nota.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTX-4A-p9U">
+                                <rect key="frame" x="149" y="296" width="94" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Analise da nota..." lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wq7-bX-nqG">
-                                <rect key="frame" x="16" y="283" width="361" height="21"/>
+                                <rect key="frame" x="16" y="380" width="361" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -203,11 +210,12 @@
                     <navigationItem key="navigationItem" id="YVP-VA-eVz"/>
                     <connections>
                         <outlet property="notaAnalise" destination="Wq7-bX-nqG" id="go4-9u-zVB"/>
+                        <outlet property="notaNumero" destination="xTX-4A-p9U" id="06R-qx-UeE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdb-OE-9kW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778" y="670"/>
+            <point key="canvasLocation" x="1777.8625954198474" y="669.71830985915494"/>
         </scene>
         <!--Incendio View Controller-->
         <scene sceneID="vkt-Ky-vXl">
@@ -440,6 +448,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
