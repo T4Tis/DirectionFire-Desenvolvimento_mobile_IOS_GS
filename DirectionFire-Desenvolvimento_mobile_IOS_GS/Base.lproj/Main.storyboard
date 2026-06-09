@@ -412,10 +412,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNc-Rz-OdW">
-                                <rect key="frame" x="108" y="409" width="177" height="35"/>
+                                <rect key="frame" x="69" y="409" width="256" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Regios Cadastradas"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Tabela e detecção de incendio"/>
                                 <connections>
                                     <segue destination="fCb-jP-8eD" kind="show" id="lld-WG-mXl"/>
                                 </connections>
