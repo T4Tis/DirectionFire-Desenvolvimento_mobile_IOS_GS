@@ -19,6 +19,7 @@
 		ACE573142FD7390900B1D056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE573122FD7390900B1D056 /* LaunchScreen.storyboard */; };
 		ACE573222FD75DA000B1D056 /* Regiao.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE573212FD75DA000B1D056 /* Regiao.swift */; };
 		ACF3B7B62FD858DC007CC431 /* MensagemHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3B7B52FD858DC007CC431 /* MensagemHelper.swift */; };
+		ACF3B7B82FD85BC2007CC431 /* NomeRmNotaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3B7B72FD85BC2007CC431 /* NomeRmNotaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		ACE573152FD7390900B1D056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACE573212FD75DA000B1D056 /* Regiao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regiao.swift; sourceTree = "<group>"; };
 		ACF3B7B52FD858DC007CC431 /* MensagemHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensagemHelper.swift; sourceTree = "<group>"; };
+		ACF3B7B72FD85BC2007CC431 /* NomeRmNotaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomeRmNotaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				AC8025272FD78DD0000E7C44 /* RegiaoTableViewController.swift */,
 				AC8025292FD78FEA000E7C44 /* ArryMemoria.swift */,
 				ACE5730D2FD7390600B1D056 /* Main.storyboard */,
+				ACF3B7B72FD85BC2007CC431 /* NomeRmNotaViewController.swift */,
 				ACF3B7B52FD858DC007CC431 /* MensagemHelper.swift */,
 				ACE573212FD75DA000B1D056 /* Regiao.swift */,
 				ACE573102FD7390900B1D056 /* Assets.xcassets */,
@@ -162,6 +165,7 @@
 				AC8025282FD78DD0000E7C44 /* RegiaoTableViewController.swift in Sources */,
 				ACE573222FD75DA000B1D056 /* Regiao.swift in Sources */,
 				AC80252A2FD78FEA000E7C44 /* ArryMemoria.swift in Sources */,
+				ACF3B7B82FD85BC2007CC431 /* NomeRmNotaViewController.swift in Sources */,
 				AC80252C2FD79B91000E7C44 /* IncendioViewController.swift in Sources */,
 				ACE5730A2FD7390600B1D056 /* SceneDelegate.swift in Sources */,
 				ACF3B7B62FD858DC007CC431 /* MensagemHelper.swift in Sources */,

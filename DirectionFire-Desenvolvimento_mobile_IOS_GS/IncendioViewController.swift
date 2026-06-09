@@ -29,12 +29,6 @@ class IncendioViewController: UIViewController {
         if let r = regiaoSelecionada {
             lblDetectada.text = "Regiao Detectada - \(r.nome)"
         }
-        
-        txtNivel.text = "0"
-        txtNivel.isEnabled = false
-        
-        lblSituacao.text = "Situação..."
-
         configurarPopUpTipoIncendio()
         configurarPopUpDirecaoVento()
     }
@@ -43,6 +37,7 @@ class IncendioViewController: UIViewController {
         txtNivel.text = "\(Int(sender.value))"
     }
 
+    // validação aq nao acho muito ncesesario, as escolhas ja são pre determinadas e para chegar aq vc tem que escolher uma região, mas fiz pelo menos na regiaoSelecionada por preucação
     @IBAction func concluirDeteccao(_ sender: Any) {
         guard let regiao = regiaoSelecionada else {
             lblSituacao.text = "Nenhuma região selecionada"
