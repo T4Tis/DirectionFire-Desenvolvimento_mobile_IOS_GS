@@ -35,17 +35,56 @@ class RegiaoViewController: UIViewController {
 
     
     @IBAction func cadastrarArea(_ sender: Any) {
+
+        // ── Validação: nome vazio ──────────────────────────────
         let nome = txtNomeLocal.text ?? ""
+        guard !nome.trimmingCharacters(in: .whitespaces).isEmpty else {
+            MensagemHelper.campoObrigatorio(campo: "Nome do Local", em: self)
+            return
+        }
+
+        // Validação: umidade vazia
+        let umidadeStr = txtUmidade.text ?? ""
+        guard !umidadeStr.trimmingCharacters(in: .whitespaces).isEmpty else {
+            MensagemHelper.campoObrigatorio(campo: "Umidade", em: self)
+            return
+        }
+
+        // Validação: umidade numérica
+        guard let umidade = Int(umidadeStr) else {
+            MensagemHelper.valorInvalido(campo: "Umidade", em: self)
+            return
+        }
+
+        // Validação: temperatura vazia
+        let tempStr = txtTempMedia.text ?? ""
+        guard !tempStr.trimmingCharacters(in: .whitespaces).isEmpty else {
+            MensagemHelper.campoObrigatorio(campo: "Temperatura Média", em: self)
+            return
+        }
+
+        // Validação: temperatura numérica
+        guard let temperatura = Int(tempStr) else {
+            MensagemHelper.valorInvalido(campo: "Temperatura Média", em: self)
+            return
+        }
+
+        // Tudo válido: cadastrar
         let vegetacao = tipVegetacao.currentTitle ?? ""
-        let umidade = Int(txtUmidade.text ?? "0")!
-        let temperatura = Int(txtTempMedia.text ?? "0")!
         let chuva = chuva.isOn
         let regImportante = importanteProximo.isOn
         let dirImportante = dirAreaImportante.currentTitle ?? ""
-        
-        let regiao = Regiao(nome: nome, vegetacao: vegetacao, umidade: umidade, temperaturaMedia: temperatura, chuvaRecente: chuva, importanteProximo:  regImportante, direcaoImportante: dirImportante)
-        
+
+        let regiao = Regiao(
+            nome: nome, vegetacao: vegetacao,
+            umidade: umidade, temperaturaMedia: temperatura,
+            chuvaRecente: chuva, importanteProximo: regImportante,
+            direcaoImportante: dirImportante
+        )
+
         ArryMemoria.regioes.append(regiao)
+
+        MensagemHelper.alerta(titulo: "Cadastrado!", mensagem: "\"\(nome)\" foi adicionada com sucesso.", em: self)
     }
     
     
