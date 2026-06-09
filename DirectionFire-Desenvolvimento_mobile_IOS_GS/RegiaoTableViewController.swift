@@ -82,15 +82,22 @@ class RegiaoTableViewController: UITableViewController {
         return true
     }
     */
+    
+    override func tableView(_ tableView: UITableView,didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "irIncendio", sender: indexPath)
+    }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "irIncendio",
+           let destino = segue.destination as? IncendioViewController,
+           let indexPath = sender as? IndexPath {
+            destino.regiaoSelecionada = ArryMemoria.regioes[indexPath.row]
+        }
     }
-    */
+    
 
 }

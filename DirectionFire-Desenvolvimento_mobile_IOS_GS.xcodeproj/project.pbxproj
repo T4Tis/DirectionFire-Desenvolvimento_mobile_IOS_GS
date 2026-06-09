@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		AC8025282FD78DD0000E7C44 /* RegiaoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8025272FD78DD0000E7C44 /* RegiaoTableViewController.swift */; };
 		AC80252A2FD78FEA000E7C44 /* ArryMemoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8025292FD78FEA000E7C44 /* ArryMemoria.swift */; };
+		AC80252C2FD79B91000E7C44 /* IncendioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80252B2FD79B91000E7C44 /* IncendioViewController.swift */; };
+		AC80252E2FD7A024000E7C44 /* Incendio.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80252D2FD7A024000E7C44 /* Incendio.swift */; };
 		ACE573082FD7390600B1D056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE573072FD7390600B1D056 /* AppDelegate.swift */; };
 		ACE5730A2FD7390600B1D056 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE573092FD7390600B1D056 /* SceneDelegate.swift */; };
-		ACE5730C2FD7390600B1D056 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5730B2FD7390600B1D056 /* ViewController.swift */; };
+		ACE5730C2FD7390600B1D056 /* RegiaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5730B2FD7390600B1D056 /* RegiaoViewController.swift */; };
 		ACE5730F2FD7390600B1D056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE5730D2FD7390600B1D056 /* Main.storyboard */; };
 		ACE573112FD7390900B1D056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE573102FD7390900B1D056 /* Assets.xcassets */; };
 		ACE573142FD7390900B1D056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE573122FD7390900B1D056 /* LaunchScreen.storyboard */; };
@@ -21,10 +23,12 @@
 /* Begin PBXFileReference section */
 		AC8025272FD78DD0000E7C44 /* RegiaoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiaoTableViewController.swift; sourceTree = "<group>"; };
 		AC8025292FD78FEA000E7C44 /* ArryMemoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArryMemoria.swift; sourceTree = "<group>"; };
+		AC80252B2FD79B91000E7C44 /* IncendioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncendioViewController.swift; sourceTree = "<group>"; };
+		AC80252D2FD7A024000E7C44 /* Incendio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incendio.swift; sourceTree = "<group>"; };
 		ACE573042FD7390600B1D056 /* DirectionFire-Desenvolvimento_mobile_IOS_GS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DirectionFire-Desenvolvimento_mobile_IOS_GS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE573072FD7390600B1D056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACE573092FD7390600B1D056 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ACE5730B2FD7390600B1D056 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACE5730B2FD7390600B1D056 /* RegiaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiaoViewController.swift; sourceTree = "<group>"; };
 		ACE5730E2FD7390600B1D056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACE573102FD7390900B1D056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACE573132FD7390900B1D056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +68,9 @@
 			children = (
 				ACE573072FD7390600B1D056 /* AppDelegate.swift */,
 				ACE573092FD7390600B1D056 /* SceneDelegate.swift */,
-				ACE5730B2FD7390600B1D056 /* ViewController.swift */,
+				ACE5730B2FD7390600B1D056 /* RegiaoViewController.swift */,
+				AC80252B2FD79B91000E7C44 /* IncendioViewController.swift */,
+				AC80252D2FD7A024000E7C44 /* Incendio.swift */,
 				AC8025272FD78DD0000E7C44 /* RegiaoTableViewController.swift */,
 				AC8025292FD78FEA000E7C44 /* ArryMemoria.swift */,
 				ACE5730D2FD7390600B1D056 /* Main.storyboard */,
@@ -147,11 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACE5730C2FD7390600B1D056 /* ViewController.swift in Sources */,
+				ACE5730C2FD7390600B1D056 /* RegiaoViewController.swift in Sources */,
 				ACE573082FD7390600B1D056 /* AppDelegate.swift in Sources */,
+				AC80252E2FD7A024000E7C44 /* Incendio.swift in Sources */,
 				AC8025282FD78DD0000E7C44 /* RegiaoTableViewController.swift in Sources */,
 				ACE573222FD75DA000B1D056 /* Regiao.swift in Sources */,
 				AC80252A2FD78FEA000E7C44 /* ArryMemoria.swift in Sources */,
+				AC80252C2FD79B91000E7C44 /* IncendioViewController.swift in Sources */,
 				ACE5730A2FD7390600B1D056 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

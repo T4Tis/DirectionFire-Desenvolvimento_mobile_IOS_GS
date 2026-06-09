@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RegiaoViewController: UIViewController {
     //PopUpButtom
     @IBOutlet weak var tipVegetacao: UIButton!
     @IBOutlet weak var dirAreaImportante: UIButton!
