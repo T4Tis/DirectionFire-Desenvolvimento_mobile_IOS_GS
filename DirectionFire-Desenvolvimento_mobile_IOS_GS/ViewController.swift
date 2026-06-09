@@ -27,6 +27,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         configurarPopUpButtonVegetacao()
         configurarPopUpButtonDirecaoVento()
+        
+        // Região pronta para teste da tableview
+        let r = Regiao(nome: "Teste", vegetacao: "Tundra", umidade: 41, temperaturaMedia: 23, chuvaRecente: false, importanteProximo: false, direcaoImportante: "Suldeste")
+        ArryMemoria.regioes.append(r)
     }
 
     
@@ -41,9 +45,7 @@ class ViewController: UIViewController {
         
         let regiao = Regiao(nome: nome, vegetacao: vegetacao, umidade: umidade, temperaturaMedia: temperatura, chuvaRecente: chuva, importanteProximo:  regImportante, direcaoImportante: dirImportante)
         
-        
-//        print("\(regiao.nome) \(regiao.vegetacao) \(regiao.umidade) \(regiao.chuvaRecente)")
-        
+        ArryMemoria.regioes.append(regiao)
     }
     
     

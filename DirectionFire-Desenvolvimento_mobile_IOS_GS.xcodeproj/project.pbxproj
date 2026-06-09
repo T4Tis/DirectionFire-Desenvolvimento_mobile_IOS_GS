@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC8025282FD78DD0000E7C44 /* RegiaoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8025272FD78DD0000E7C44 /* RegiaoTableViewController.swift */; };
+		AC80252A2FD78FEA000E7C44 /* ArryMemoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8025292FD78FEA000E7C44 /* ArryMemoria.swift */; };
 		ACE573082FD7390600B1D056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE573072FD7390600B1D056 /* AppDelegate.swift */; };
 		ACE5730A2FD7390600B1D056 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE573092FD7390600B1D056 /* SceneDelegate.swift */; };
 		ACE5730C2FD7390600B1D056 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5730B2FD7390600B1D056 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC8025272FD78DD0000E7C44 /* RegiaoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiaoTableViewController.swift; sourceTree = "<group>"; };
+		AC8025292FD78FEA000E7C44 /* ArryMemoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArryMemoria.swift; sourceTree = "<group>"; };
 		ACE573042FD7390600B1D056 /* DirectionFire-Desenvolvimento_mobile_IOS_GS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DirectionFire-Desenvolvimento_mobile_IOS_GS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE573072FD7390600B1D056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACE573092FD7390600B1D056 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				ACE573072FD7390600B1D056 /* AppDelegate.swift */,
 				ACE573092FD7390600B1D056 /* SceneDelegate.swift */,
 				ACE5730B2FD7390600B1D056 /* ViewController.swift */,
+				AC8025272FD78DD0000E7C44 /* RegiaoTableViewController.swift */,
+				AC8025292FD78FEA000E7C44 /* ArryMemoria.swift */,
 				ACE5730D2FD7390600B1D056 /* Main.storyboard */,
 				ACE573212FD75DA000B1D056 /* Regiao.swift */,
 				ACE573102FD7390900B1D056 /* Assets.xcassets */,
@@ -143,7 +149,9 @@
 			files = (
 				ACE5730C2FD7390600B1D056 /* ViewController.swift in Sources */,
 				ACE573082FD7390600B1D056 /* AppDelegate.swift in Sources */,
+				AC8025282FD78DD0000E7C44 /* RegiaoTableViewController.swift in Sources */,
 				ACE573222FD75DA000B1D056 /* Regiao.swift in Sources */,
+				AC80252A2FD78FEA000E7C44 /* ArryMemoria.swift in Sources */,
 				ACE5730A2FD7390600B1D056 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
